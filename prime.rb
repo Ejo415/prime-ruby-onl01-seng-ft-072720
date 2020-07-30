@@ -1,7 +1,12 @@
 
 
 def prime?(num)
- Math.sqrt(num).floor.downto(2).each {|i| return false if num % i < 0}
-   true
+   for d in 2..(num - 1)
+   if (num % d) == 0
+    return false
+   end
+  end
+
+  true
 end 
 
