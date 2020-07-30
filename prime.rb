@@ -1,7 +1,7 @@
 
 
 def prime?(num)
- range = (2..num - 1)).to_a check = true 
+ range = (2..(num - 1)).to_a check = true 
  if number < 2 
    check = false 
  else
