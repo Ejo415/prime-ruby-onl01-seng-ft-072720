@@ -14,4 +14,4 @@ def prime?(num)
  end
  puts check
 end 
-end
+
