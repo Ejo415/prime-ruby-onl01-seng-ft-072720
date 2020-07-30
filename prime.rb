@@ -1,12 +1,17 @@
 
 
 def prime?(num)
- if num <= 1 
-   false 
-   elsif n == 2 
-   true 
+ range = (2..num - 1)).to_a check = true 
+ if number < 2 
+   check = false 
  else
-   (2..num/2).none? {|i| num % i == 0}
- end 
+   range.each do |i|
+     if num % i == 0 
+       check = false
+       break
+     end
+   end
+ end
+ puts check
 end 
 
